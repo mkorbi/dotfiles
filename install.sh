@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
 # install aws
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
+sudo apt-get update
+sudo apt-get install awscli -y
 aws --version
 
 aws configure set region eu-central-1 --profile max
